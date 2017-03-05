@@ -1,0 +1,28 @@
+C:\Users\Robert\Desktop\Fusion\Project\Project\bin\Debug\Project.exe.config
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\MainWindow.g.cs
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\App.g.cs
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project_MarkupCompile.cache
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project_MarkupCompile.lref
+C:\Users\Robert\Desktop\Fusion\Project\Project\bin\Debug\Project.exe
+C:\Users\Robert\Desktop\Fusion\Project\Project\bin\Debug\Project.pdb
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\MainWindow.baml
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project.g.resources
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project.exe
+C:\Users\Robert\Desktop\Fusion\Project\Project\obj\Debug\Project.pdb
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\bin\Debug\Project.exe.config
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project.exe
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project.pdb
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\bin\Debug\Project.exe
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\MainWindow.g.cs
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\App.g.cs
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project_MarkupCompile.cache
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project_MarkupCompile.lref
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\MainWindow.baml
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project.g.resources
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+C:\Users\Robert\Desktop\Fusion\Project - dobry\Project\bin\Debug\Project.pdb

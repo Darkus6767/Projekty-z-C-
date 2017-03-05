@@ -1,0 +1,25 @@
+﻿<Window x:Class="ManageMoney.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManageMoney"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="Gainsboro">
+
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="27,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" Content="1" HorizontalAlignment="Left" Margin="216,268,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="323,36,0,0" VerticalAlignment="Top" />
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="162,36,0,0" Background="PaleGoldenrod" VerticalAlignment="Top" Width="45" Height="23" Click="button1_Click"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="36,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.675,4.718"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="217,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Ilosc $$ na jedzenie"/><Run Text=":"/></TextBlock>
+        <Label x:Name="label2" Content="" HorizontalAlignment="Left" Margin="356,87,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="216,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124"><Run Text="Ilosc $$ na "/><Run Text="rachunki"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="216,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Ilosc "/><Run Text="pozostało"/><Run Text=":"/></TextBlock>
+        <Label x:Name="label3" Content="" HorizontalAlignment="Left" Margin="339,148,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textBox_mem" HorizontalAlignment="Left" Height="23" Margin="28,71,0,0" TextWrapping="Wrap"  Text="1" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged" GotFocus="textBox_mem_GotFocus"  />
+        <Button x:Name="button_reset" Content="Reset" HorizontalAlignment="Left" Margin="48,132,0,0" VerticalAlignment="Top" Width="75" Click="button_reset_Click"/>
+
+    </Grid>
+</Window>

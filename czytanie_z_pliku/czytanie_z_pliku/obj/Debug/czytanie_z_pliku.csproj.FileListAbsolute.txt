@@ -1,0 +1,6 @@
+C:\Users\Robert\Desktop\Fusion\czytanie_z_pliku\czytanie_z_pliku\bin\Debug\czytanie_z_pliku.exe.config
+C:\Users\Robert\Desktop\Fusion\czytanie_z_pliku\czytanie_z_pliku\obj\Debug\czytanie_z_pliku.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Desktop\Fusion\czytanie_z_pliku\czytanie_z_pliku\bin\Debug\czytanie_z_pliku.exe
+C:\Users\Robert\Desktop\Fusion\czytanie_z_pliku\czytanie_z_pliku\bin\Debug\czytanie_z_pliku.pdb
+C:\Users\Robert\Desktop\Fusion\czytanie_z_pliku\czytanie_z_pliku\obj\Debug\czytanie_z_pliku.exe
+C:\Users\Robert\Desktop\Fusion\czytanie_z_pliku\czytanie_z_pliku\obj\Debug\czytanie_z_pliku.pdb

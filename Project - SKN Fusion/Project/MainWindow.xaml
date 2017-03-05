@@ -1,0 +1,49 @@
+﻿<Window x:Class="Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize"
+        KeyDown="Window_KeyDown"
+        >
+
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Height="23" Name="resultBox" VerticalAlignment="Top" TextChanged="resultBox_TextChanged"  HorizontalContentAlignment="Right" Grid.ColumnSpan="3" Margin="0,10,0,0" />
+        <Button Content="0" Height="40" Margin="2,194,0,0" Name="number0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1" />
+        <Button Content="1" Height="40" Margin="2,148,0,0" Name="number1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1" />
+        <Button Content="2" Height="40" Margin="49,148,0,0" Name="number2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1"  />
+        <Button Content="3" Height="40" Margin="94,149,0,0" Name="number3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1"  />
+        <Button Content="4" Height="40" Margin="3,103,0,0" Name="number4" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1" />
+        <Button Content="5" Height="40" Margin="49,103,0,0" Name="number5" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1" RenderTransformOrigin="0.55,0.175"  />
+        <Button Content="6" Height="40" Margin="94,103,0,0" Name="number6" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1" RenderTransformOrigin="0.8,0.55"  />
+        <Button Content="7" Height="40" Margin="2,56,0,0" Name="number7" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1" />
+        <Button Content="8" Height="40" Margin="95,57,0,0" Name="number8" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1"  />
+        <Button Content="9" Height="40" Margin="48,56,0,0" Name="number9" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="number_Click" Grid.Column="1"  />
+        <Button Content="=" Height="40" Margin="94,194,0,0" Name="result" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="result_Click" Grid.Column="1"  />
+        <Button Content="." Height="40" Margin="48,194,0,0" Name="comma" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="comma_Click" Grid.Column="1"  />
+        <Button Content="*" Height="40" Margin="141,57,0,0" Name="multiplication" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="operation_Click" Grid.Column="1"  />
+        <Button Content="/" Height="40" Margin="188,57,0,0" Name="division" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="operation_Click" Grid.Column="1" />
+        <Button Content="+" Height="40" Margin="141,148,0,0" Name="add" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="operation_Click" Grid.Column="1"  />
+        <Button Content="-" Height="40" Margin="141,102,0,0" Name="subs" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="operation_Click" Grid.Column="1"  />
+        <Button Content="^" Height="40" Margin="188,102,0,0" Name="power" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="operation_Click" Grid.Column="1"  />
+        <Button Content="N!" Height="40" Margin="188,148,0,0" Name="strong" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"  Click="strong_Click" Grid.Column="1" />
+        <Button Content="bin" Height="40" Margin="141,194,0,0" Name="binarySys" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"  Click="binSys_Click" Grid.Column="1" />
+        <Button Content="hex" Height="40" Margin="233,148,0,0" x:Name="hexSys" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"  Click="hexSys_Click" Grid.Column="1" />
+        <Button Content="cls" Height="40" HorizontalAlignment="Left" Margin="188,194,0,0" Name="clear" VerticalAlignment="Top" Width="40" Click="clear_Click" Grid.Column="1"  />
+        <Button Content="Negation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="59" Margin="10,120,0,0" Click="Negation_Click"/>
+        <Button Content="C" Height="40" Margin="233,194,0,0" x:Name="strong_Copy" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"  Click="delete_Click" Grid.Column="1" />
+
+        <Label x:Name="Equation" Content="" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="62" Foreground="Gray"/>
+        <Button Content="Fib(n)" Height="40" Margin="233,103,0,0" x:Name="hexSys_Copy" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40"  Click="Fib_Click" Grid.Column="1" />
+        <Button x:Name="internet" Content="Strona koła naukowego SKN Fusion" Grid.Column="1" HorizontalAlignment="Left" Margin="24,267,0,0" VerticalAlignment="Top" Width="204" Click="internet_Click"/>
+        <Label x:Name="label" Content="Projekt realizowany w ramach koła naukowego SKN Fusion" HorizontalAlignment="Left" Margin="83,33,0,0" VerticalAlignment="Top" Width="356" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</Window>
