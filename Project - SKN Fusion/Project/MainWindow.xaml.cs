@@ -24,17 +24,17 @@ namespace Project
         string operation = "";
         bool operation_pressed; // sprawdza czy znak operacji jest wcisnięty
         bool flag = false;
-        
+
         public MainWindow()
         {
             InitializeComponent();
-          
+
         }
         #region podstawowa_funkcjonalnosc
 
         private void number_Click(object sender, RoutedEventArgs e)
         {
-            if ((resultBox.Text == "0")|| (operation_pressed)) 
+            if ((resultBox.Text == "0") || (operation_pressed))
                 resultBox.Clear();
             if (flag == true)
             {
@@ -57,7 +57,7 @@ namespace Project
             Button b = (Button)sender;
             // przypadek gdy jest już jakaś wartość, po nacisnięciu przycisku operacji od razu zwróci nam wartość działania
             // nie trzeba za każdym razem wciskac znaku równości/entera
-            if (value != 0) 
+            if (value != 0)
             {
                 result.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
                 operation_pressed = true;
@@ -65,13 +65,17 @@ namespace Project
                 Equation.Content = value + " " + operation;
 
             }
-            
+
             else
             {
                 operation = b.Content.ToString();
-                value = Double.Parse(resultBox.Text);
-                operation_pressed = true;
-                Equation.Content = value + " " + operation;
+                if (resultBox.Text != "")
+                {
+                    value = Double.Parse(resultBox.Text);
+                    operation_pressed = true;
+                    Equation.Content = value + " " + operation;
+                }
+
             }
         }
 
@@ -81,7 +85,7 @@ namespace Project
             Equation.Content = "";
             switch (operation)
             {
-              
+
                 case "+":
                     resultBox.Text = OperationsTwoNum.Add(value, Double.Parse(resultBox.Text)).ToString();
                     value = Double.Parse(resultBox.Text);
@@ -91,11 +95,11 @@ namespace Project
                     value = Double.Parse(resultBox.Text);
                     break;
                 case "*":
-                    resultBox.Text = OperationsTwoNum.Multi(value , Double.Parse(resultBox.Text)).ToString();
+                    resultBox.Text = OperationsTwoNum.Multi(value, Double.Parse(resultBox.Text)).ToString();
                     value = Double.Parse(resultBox.Text);
                     break;
                 case "/":
-                    resultBox.Text = OperationsTwoNum.Divide (value ,Double.Parse(resultBox.Text)).ToString();
+                    resultBox.Text = OperationsTwoNum.Divide(value, Double.Parse(resultBox.Text)).ToString();
                     value = Double.Parse(resultBox.Text);
                     break;
                 case "^":
@@ -103,9 +107,9 @@ namespace Project
                     value = Double.Parse(resultBox.Text);
                     break;
                 default:
-                    break;     
+                    break;
             }
-            
+
             operation = "";
             operation_pressed = false;
         }
@@ -142,10 +146,10 @@ namespace Project
         #region obsluga_klawiatury_numerycznej
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-           
+
             switch (e.Key)
             {
-                
+
                 case Key.NumPad0:
                     number0.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
                     break;
@@ -196,37 +200,42 @@ namespace Project
                     break;
                 default:
                     break;
-                    
+
             }
         }
         #endregion
-    
+
 
         #region OneNumOperations
         private void strong_Click(object sender, RoutedEventArgs e)
         {
-            resultBox.Text = OperationOneNum.Strong(Double.Parse(resultBox.Text)).ToString();
-           
+            if (resultBox.Text != "")
+                resultBox.Text = OperationOneNum.Strong(Double.Parse(resultBox.Text)).ToString();
+
         }
         private void Negation_Click(object sender, RoutedEventArgs e)
         {
-            resultBox.Text = OperationOneNum.Neg(Double.Parse(resultBox.Text)).ToString();
+            if (resultBox.Text != "")
+                resultBox.Text = OperationOneNum.Neg(Double.Parse(resultBox.Text)).ToString();
         }
         private void binSys_Click(object sender, RoutedEventArgs e)
         {
-            resultBox.Text = OperationOneNum.Convert(Int32.Parse(resultBox.Text),2).ToString();
+            if (resultBox.Text != "")
+                resultBox.Text = OperationOneNum.Convert(Int32.Parse(resultBox.Text), 2).ToString();
         }
         private void hexSys_Click(object sender, RoutedEventArgs e)
         {
-            resultBox.Text = OperationOneNum.Convert(Int32.Parse(resultBox.Text), 16).ToString();
+            if (resultBox.Text != "")
+                resultBox.Text = OperationOneNum.Convert(Int32.Parse(resultBox.Text), 16).ToString();
         }
         private void Fib_Click(object sender, RoutedEventArgs e)
         {
-            resultBox.Text = OperationOneNum.Fib(UInt32.Parse(resultBox.Text)).ToString();
+            if (resultBox.Text != "")
+                resultBox.Text = OperationOneNum.Fib(UInt32.Parse(resultBox.Text)).ToString();
         }
         #endregion
 
-       
+
     }
-    
+
 }
